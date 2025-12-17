@@ -64,8 +64,8 @@ La aplicación está desarrollada en PHP usando el framework CodeIgniter 4 y se 
 app/
 │
 ├── Controllers
-│   ├── Home.php # Controlador que carga vistas para principal, monoplaza y contacto
-│   ├── Admin_Controller.php # Controlador de funciones administrativas
+│   ├── Home.php # Controlador que carga vistas para principal, monoplaza y contacto
+│   ├── Admin_Controller.php # Controlador de funciones administrativas
 │   ├── Login_Controller.php # Maneja el inicio y cierre de sesión
 │   ├── Panel_Controller.php # Controla las acciones del panel de usuario logueado (bienvenida, ver, editar)
 │   └── Usuario_Controller.php # Maneja el registro de nuevos usuarios
@@ -78,23 +78,23 @@ app/
 │       └── redbull_racing.sql # Script SQL con la estructura de la base de datos y datos iniciales
 │
 └── Views/
-    ├── front/
-    │   ├── head_view.php         # Head HTML con metadatos, estilos y scripts globales
-    │   ├── navbar_view.php       # Barra de navegación responsiva y dinámica
-    │   ├── footer_view.php       # Pie de página con información y enlaces
-    │   ├── form_view.php         # Formularios modales de login y registro
-    │   ├── principal.php         # Página principal con banner, equipo y logros
-    │   ├── monoplaza.php         # Sección con descripción y multimedia del monoplaza
-    │   ├── pilotos.php           # Cards de pilotos y sección con estadísticas detalladas
-    │   └── contacto.php          # Página de contacto con formulario, redes y mapa
-    │
-    └── back/
+      ├── front/
+    │   ├── head_view.php         # Head HTML con metadatos, estilos y scripts globales
+    │   ├── navbar_view.php       # Barra de navegación responsiva y dinámica
+    │   ├── footer_view.php       # Pie de página con información y enlaces
+    │   ├── form_view.php         # Formularios modales de login y registro
+    │   ├── principal.php         # Página principal con banner, equipo y logros
+    │   ├── monoplaza.php         # Sección con descripción y multimedia del monoplaza
+    │   ├── pilotos.php           # Cards de pilotos y sección con estadísticas detalladas
+    │   └── contacto.php          # Página de contacto con formulario, redes y mapa
+      │
+      └── back/
         ├── admin/                # Solo accesible por usuarios con rol administrador
-        │   ├── admin_panel.php       # Vista principal del panel de administración con tabla CRUD
-        │   ├── editar_usuario.php     # Formulario para editar datos de un usuario
-        │   └── ver_usuario.php        # Visualización detallada de un usuario
-        │
-        └── usuario/              # Vistas para usuarios registrados
+          │   ├── admin_panel.php       # Vista principal del panel de administración con tabla CRUD
+          │   ├── editar_usuario.php     # Formulario para editar datos de un usuario
+          │   └── ver_usuario.php        # Visualización detallada de un usuario
+          │
+          └── usuario/              # Vistas para usuarios registrados
             ├── editar_perfil.php     # Formulario para que el usuario edite su perfil
             ├── login.php             # Modal de login con validación
             ├── registro.php          # Modal de registro con validación
@@ -116,22 +116,19 @@ assets/
 │
 └── img/
     ├── banner/
-    │   ├── principal/
-    │   ├── monoplaza/
-    │   ├── contacto/
-    │   └── pilotos/
-    │
+    │   ├── principal/
+    │   ├── monoplaza/
+    │   ├── contacto/
+    │   └── pilotos/
     ├── icons/
-    │   ├── logo/
-    │   ├── redes-small/
-    │   └── redes-medium/
-    │
+    │   ├── logo/
+    │   ├── redes-small/
+    │   └── redes-medium/
     ├── monoplaza/
-    │
     ├── perfil/
-    │   └── usuarios/            # Imágenes de perfiles (cliente.png, admin.png)
+    │   └── usuarios/            # Imágenes de perfiles (cliente.png, admin.png)
     │
-    └── videos/
+     └── videos/
 ```
 
 ---
