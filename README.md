@@ -60,68 +60,79 @@ La aplicación está desarrollada en PHP usando el framework CodeIgniter 4 y se 
 ---
 
 ## 📁 Estructura del proyecto
+```bash
+app/
+│
+├── Controllers
+│   ├── Home.php # Controlador que carga vistas para principal, monoplaza y contacto
+│   ├── Admin_Controller.php # Controlador de funciones administrativas
+│   ├── Login_Controller.php # Maneja el inicio y cierre de sesión
+│   ├── Panel_Controller.php # Controla las acciones del panel de usuario logueado (bienvenida, ver, editar)
+│   └── Usuario_Controller.php # Maneja el registro de nuevos usuarios
+│
+├── Config/
+│   └── Routes.php # Define las rutas para cada sección principal
+│
+├── Database/
+│   └── Migrations
+│       └── redbull_racing.sql # Script SQL con la estructura de la base de datos y datos iniciales
+│
+└── Views/
+    ├── front/
+    │   ├── head_view.php         # Head HTML con metadatos, estilos y scripts globales
+    │   ├── navbar_view.php       # Barra de navegación responsiva y dinámica
+    │   ├── footer_view.php       # Pie de página con información y enlaces
+    │   ├── form_view.php         # Formularios modales de login y registro
+    │   ├── principal.php         # Página principal con banner, equipo y logros
+    │   ├── monoplaza.php         # Sección con descripción y multimedia del monoplaza
+    │   ├── pilotos.php           # Cards de pilotos y sección con estadísticas detalladas
+    │   └── contacto.php          # Página de contacto con formulario, redes y mapa
+    │
+    └── back/
+        ├── admin/                # Solo accesible por usuarios con rol administrador
+        │   ├── admin_panel.php       # Vista principal del panel de administración con tabla CRUD
+        │   ├── editar_usuario.php     # Formulario para editar datos de un usuario
+        │   └── ver_usuario.php        # Visualización detallada de un usuario
+        │
+        └── usuario/              # Vistas para usuarios registrados
+            ├── editar_perfil.php     # Formulario para que el usuario edite su perfil
+            ├── login.php             # Modal de login con validación
+            ├── registro.php          # Modal de registro con validación
+            ├── usuario_logueado.php  # Panel principal con datos y bienvenida (admin/cliente)
+            └── ver_mi_perfil.php     # Vista de perfil propio del usuario
 
-/app/Controllers\
-  ├── Home.php # Controlador que carga vistas para principal, monoplaza y contacto\
-  ├── Admin\_Controller.php # Controlador de funciones administrativas (admin\_panel, crud "ver, editar ,alta, baja")\
-  ├── Login\_Controller.php # Maneja el inicio y cierre de sesión\
-  ├── Panel\_Controller.php # Controla las acciones del panel de usuario logueado (bienvenida, ver, editar)\
-  └── Usuario\_Controller.php # Maneja el registro de nuevos usuarios
-
-/app/Config\
-  └── Routes.php # Define las rutas para cada sección principal
-
-/app/Database/Migrations\
-  └── alegre\_leandro.sql # Script SQL con la estructura de la base de datos y datos iniciales\
-\
-/app\
-└── /Views\
-  ├── /front\
-  │  ├── head\_view\.php         # Head HTML con metadatos, estilos y scripts globales\
-  │  ├── navbar\_view\.php       # Barra de navegación responsiva y dinámica\
-  │  ├── footer\_view\.php       # Pie de página con información y enlaces\
-  │  ├── form\_view\.php         # Formularios modales de login y registro\
-  │  ├── principal.php         # Página principal con banner, equipo y logros\
-  │  ├── monoplaza.php         # Sección con descripción y multimedia del monoplaza\
-  │  ├── pilotos.php           # Cards de pilotos y sección con estadísticas detalladas\
-  │  └── contacto.php          # Página de contacto con formulario, redes y mapa\
-  └── /back\
-     ├── /admin                # Solo accesible por usuarios con rol administrador\
-     │  ├── admin\_panel.php       # Vista principal del panel de administración con tabla CRUD\
-     │  ├── editar\_usuario.php     # Formulario para editar datos de un usuario\
-     │  └── ver\_usuario.php        # Visualización detallada de un usuario\
-     └── /usuario              # Vistas para usuarios registrados\
-       ├── editar\_perfil.php     # Formulario para que el usuario edite su perfil\
-       ├── login.php             # Modal de login con validación\
-       ├── registro.php          # Modal de registro con validación\
-       ├── usuario\_logueado.php  # Panel principal con datos y bienvenida (admin/cliente)\
-       └── ver\_mi\_perfil.php     # Vista de perfil propio del usuario
-
-/assets\
-├── css/\
-│  ├── bootstrap.min.css\
-│  └── style.css              # Estilos personalizados para todas las vistas\
-├── js/\
-│  ├── bootstrap.min.js\
-│  ├── contacto.js            # Validación y alertas del formulario de contacto\
-│  ├── buscador-navbar.js     # Funcionalidad de buscador en la navbar\
-│  ├── admin\_panel.js         # SweetAlert2 para panel admin (alta/baja usuarios)\
-│  └── editar\_usuario.js      # SweetAlert2 para edición de usuario
-
-└── img/\
-  ├── banner/\
-  │  ├── principal/\
-  │  ├── monoplaza/\
-  │  ├── contacto/\
-  │  └── pilotos/\
-  ├── icons/\
-  │  ├── logo/\
-  │  ├── redes-small/\
-  │  └── redes-medium/\
-  ├── monoplaza/\
-  ├── perfil/\
-  │  └── usuarios/            # Imágenes de perfiles (cliente.png, admin.png)\
-  └── videos/
+assets/
+│
+├── css/
+│   ├── bootstrap.min.css
+│   └── style.css            # Estilos personalizados para todas las vistas
+│
+├── js/
+│   ├── bootstrap.min.js
+│   ├── contacto.js            # Validación y alertas del formulario de contacto
+│   ├── buscador-navbar.js     # Funcionalidad de buscador en la navbar
+│   ├── admin_panel.js         # SweetAlert2 para panel admin (alta/baja usuarios)
+│   └── editar_usuario.js      # SweetAlert2 para edición de usuario
+│
+└── img/
+    ├── banner/
+    │   ├── principal/
+    │   ├── monoplaza/
+    │   ├── contacto/
+    │   └── pilotos/
+    │
+    ├── icons/
+    │   ├── logo/
+    │   ├── redes-small/
+    │   └── redes-medium/
+    │
+    ├── monoplaza/
+    │
+    ├── perfil/
+    │   └── usuarios/            # Imágenes de perfiles (cliente.png, admin.png)
+    │
+    └── videos/
+```
 
 ---
 
@@ -163,7 +174,7 @@ La aplicación está desarrollada en PHP usando el framework CodeIgniter 4 y se 
 
 - `editar_usuario.php`: Formulario de edición para datos de un usuario (solo admin).
 
-- `alegre_leandro.sql`: Script SQL con estructura de tablas y datos iniciales de prueba.
+- `redbull_racing.sql`: Script SQL con estructura de tablas y datos iniciales de prueba.
 
 ---
 
@@ -171,28 +182,33 @@ La aplicación está desarrollada en PHP usando el framework CodeIgniter 4 y se 
 
 1. Clona el repositorio:
 
+- 🌐 HTTPS
 ```bash
-git clone https://github.com/Dev-Leandr0/ProT3_789402.git
+git clone https://github.com/Dev-Leandr0/redbull-racing-app.git
+```
+- 🔑 SSH
+```bash
+git clone git@github.com:Dev-Leandr0/redbull-racing-app.git
 ```
 
 2. Coloca la carpeta del proyecto dentro de tu servidor local (por ejemplo, `htdocs` en XAMPP).
 3. **🔐 En Linux**, otorga permisos a la carpeta para permitir su ejecución por parte de XAMPP:
    
 ```bash
- sudo chmod -R 777 /opt/lampp/htdocs/ProT3_789402
+ sudo chmod -R 777 /opt/lampp/htdocs/Racing-Bull
 ```
    
 4. Asegúrate de que Apache y MySQL estén corriendo en XAMPP.  
 5. Configura el archivo `.env` que está en la raíz del proyecto para establecer la baseURL:
 
 ```
-app.baseURL = 'http://localhost/ProT3_789402'
+app.baseURL = 'http://localhost/redbull-racing'
 ```
 
 5. Accede desde tu navegador a:
 
 ```
-http://localhost/ProT3_789402
+http://localhost/redbull-racing
 ```
 
 6. Navega entre las páginas usando la barra de navegación.
@@ -203,7 +219,7 @@ http://localhost/ProT3_789402
 
 ## 🗃️ Configuración de la Base de Datos
 
-✅ La base de datos viene incluida en el repositorio como archivo `alegre_leandro.sql`. No es necesario crearla manualmente.
+✅ La base de datos viene incluida en el repositorio como archivo `redbull_racing.sql`. No es necesario crearla manualmente.
 
 ### 1. Importar la base de datos
 
@@ -212,7 +228,7 @@ Desde phpMyAdmin o la terminal MySQL, simplemente importá el archivo SQL.
 💻 En phpMyAdmin:
 
 - Andá a la pestaña **Importar**.
-- Seleccioná el archivo `alegre_leandro.sql` desde la carpeta:
+- Seleccioná el archivo `redbull_racing.sql` desde la carpeta:
 
 ```
 /app/Database/Migrations/
