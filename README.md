@@ -103,28 +103,33 @@ La aplicación está desarrollada en **PHP** usando el framework **CodeIgniter 4
 
 1. Clona el repositorio:
 
+- 🌐 HTTPS
 ```bash
-git clone https://github.com/Dev-Leandr0/ProT2_789402.git
+git clone https://github.com/Dev-Leandr0/redbull-racing-app.git
+```
+- 🔑 SSH
+```bash
+git clone git@github.com:Dev-Leandr0/redbull-racing-app.git
 ```
 
 2. Coloca la carpeta del proyecto dentro de tu servidor local (por ejemplo, `htdocs` en XAMPP).
 3. **🔐 En Linux**, otorga permisos a la carpeta para permitir su ejecución por parte de XAMPP:
    
 ```bash
- sudo chmod -R 777 /opt/lampp/htdocs/ProT2_789402
+ sudo chmod -R 777 /opt/lampp/htdocs/Racing-Bull
 ```
    
 4. Asegúrate de que Apache y MySQL estén corriendo en XAMPP.  
 5. Configura el archivo `.env` que está en la raíz del proyecto para establecer la baseURL:
 
 ```
-app.baseURL = 'http://localhost/ProT2_789402'
+app.baseURL = 'http://localhost/Racing-Bull'
 ```
 
 5. Accede desde tu navegador a:
 
 ```
-http://localhost/ProT2_789402
+http://localhost/Racing-Bull
 ```
 
 6. Navega entre las páginas usando la barra de navegación.
