@@ -1,0 +1,13 @@
+# Forzar PHP en todas las vistas
+app/**/*.php linguist-language=PHP
+
+# Forzar JS en los scripts
+assets/js/**/*.js linguist-language=JavaScript
+
+# Forzar CSS en los estilos
+assets/css/**/*.css linguist-language=CSS
+
+# Ignorar archivos grandes o binarios
+app/**/*.sql linguist-vendored
+assets/img/** linguist-vendored
+assets/videos/** linguist-vendored
