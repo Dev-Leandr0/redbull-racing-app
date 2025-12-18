@@ -1,11 +1,115 @@
+# Indice
+- [Indice](#indice)
+- [🏎️ Red Bull Racing Web App](#️-red-bull-racing-web-app)
+    - [🧭 Navegación](#-navegación)
+    - [📌 Pie de Página](#-pie-de-página)
+    - [ℹ️ Sobre la Aplicación](#ℹ️-sobre-la-aplicación)
+    - [📬 Contacto](#-contacto)
+    - [🔐 Autenticación (Login y Registro)](#-autenticación-login-y-registro)
+    - [👤 Perfil de Usuario](#-perfil-de-usuario)
+    - [⚙️ Vista Administrativa](#️-vista-administrativa)
+- [📝 Descripción](#-descripción)
+  - [🖥️ Entorno de desarrollo](#️-entorno-de-desarrollo)
+  - [🚀 Tecnologías usadas](#-tecnologías-usadas)
+  - [📁 Estructura del proyecto](#-estructura-del-proyecto)
+  - [📌 Detalles importantes](#-detalles-importantes)
+- [▶️ Cómo ejecutar el proyecto](#️-cómo-ejecutar-el-proyecto)
+  - [🗃️ Configuración de la Base de Datos](#️-configuración-de-la-base-de-datos)
+    - [1. Importar la base de datos](#1-importar-la-base-de-datos)
+  - [👥 Usuarios de Prueba](#-usuarios-de-prueba)
+    - [• Administrador](#-administrador)
+    - [• Cliente](#-cliente)
+- [🤝 Cómo contribuir](#-cómo-contribuir)
+- [🐞 Reportar errores o sugerencias](#-reportar-errores-o-sugerencias)
+- [📄 Licencia](#-licencia)
+- [📬 Contacto](#-contacto-1)
 
-# Red Bull Racing Web
+<br>
 
-Sitio web temático dedicado a **Red Bull Racing**, desarrollado con **CodeIgniter 4**, que presenta información detallada sobre el equipo, su monoplaza y permite contacto con los visitantes.
+---
+# 🏎️ Red Bull Racing Web App
+
+Aplicación web desarrollada como proyecto práctico orientado a la implementación de interfaces funcionales, autenticación de usuarios y visualización de información estructurada.  
+El proyecto simula un entorno inspirado en Red Bull Racing, priorizando una experiencia de usuario clara y coherente.
+
+---
+
+### 🧭 Navegación
+
+- Componentes persistentes ubicados en la parte superior que permiten acceder a las secciones principales de la aplicación.
+
+<p>
+  <img src="documentation/img/navbar-1.png" alt="Navbar 1" style="width:100%; height:auto;" />
+</p>
+
+<p>
+  <img src="documentation/img/navbar-2.png" alt="Navbar 2" style="width:100%; height:auto;" />
+</p>
+
+---
+
+### 📌 Pie de Página
+
+- Sección ubicada al final de cada página que contiene información de contacto, enlaces relevantes y elementos de soporte al usuario.
+
+![Footer](documentation/img/footer.png)
+
+---
+
+### ℹ️ Sobre la Aplicación
+
+- Sección informativa que describe el proyecto y su contexto.
+
+![Listado](documentation/img/sobre-la-app.png)
+![Listado](documentation/img/sobre-la-app-1.gif)
+
+---
+
+### 📬 Contacto
+
+- Formulario de contacto para consultas o mensajes del usuario.
+
+<p align="center">
+  <img src="documentation/img/contacto-1.png" alt="contacto-1" height="320" />
+  <img src="documentation/img/contacto-2.png" alt="contacto-2" height="320" />
+</p>
+
+---
+
+### 🔐 Autenticación (Login y Registro)
+
+- Acceso al sistema mediante login y registro de usuarios.
+
+<p align="center">
+  <img src="documentation/img/login-1.png" alt="Login" height="320" />
+  <img src="documentation/img/register.png" alt="Registro" height="320" />
+</p>
+
+---
+
+### 👤 Perfil de Usuario
+
+- Pantalla de gestión y visualización del perfil personal del usuario autenticado.
+
+<p align="center">
+  <img src="documentation/img/perfil-1.png" alt="Perfil 1" width="48%" style="max-height: 460px;" />
+  <img src="documentation/img/perfil-2.png" alt="Perfil 2" width="48%" style="max-height: 460px;" />
+</p>
+
+---
+
+### ⚙️ Vista Administrativa
+
+- Panel con funcionalidades de control y administración del sistema.
+
+![Administración](documentation/img/crud-1.png)
+![Gestión](documentation/img/crud-2.png)
+
 
 ---
 
 # 📝 Descripción
+
 
 Este proyecto es una página web **dinámica**, **responsiva** y con funcionalidades completas de gestión de usuarios, inspirada en el equipo de Fórmula 1 Red Bull Racing.
 
@@ -175,7 +279,7 @@ assets/
 
 ---
 
-## ▶️ Cómo ejecutar el proyecto
+# ▶️ Cómo ejecutar el proyecto
 
 1. Clona el repositorio:
 
@@ -262,7 +366,7 @@ Esta medida facilita la validación funcional del sistema sin necesidad de gesti
 ---
 
 
-## 🤝 Cómo contribuir
+# 🤝 Cómo contribuir
 
 1. Haz un fork del repositorio.  
 2. Crea una nueva rama:  
@@ -276,7 +380,7 @@ git checkout -b feature/nombre-de-tu-funcion
 
 ---
 
-## 🐞 Reportar errores o sugerencias
+# 🐞 Reportar errores o sugerencias
 
 - Abre un **issue** en GitHub con una descripción clara.  
 - Expón el problema o la mejora que propones.  
@@ -284,13 +388,13 @@ git checkout -b feature/nombre-de-tu-funcion
 
 ---
 
-## 📄 Licencia
+# 📄 Licencia
 
 Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más información.
 
 ---
 
-## 📬 Contacto
+# 📬 Contacto
 
 Para cualquier duda o comentario, puedes:  
 - Abrir un issue en el repositorio.
