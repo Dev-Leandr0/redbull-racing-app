@@ -192,20 +192,20 @@ git clone git@github.com:Dev-Leandr0/redbull-racing-app.git
 3. **🔐 En Linux**, otorga permisos a la carpeta para permitir su ejecución por parte de XAMPP:
    
 ```bash
- sudo chmod -R 777 /opt/lampp/htdocs/Racing-Bull
+ sudo chmod -R 777 /opt/lampp/htdocs/redbull-racing-app
 ```
    
 4. Asegúrate de que Apache y MySQL estén corriendo en XAMPP.  
 5. Configura el archivo `.env` que está en la raíz del proyecto para establecer la baseURL:
 
 ```
-app.baseURL = 'http://localhost/redbull-racing'
+app.baseURL = 'http://localhost/redbull-racing-app/'
 ```
 
 5. Accede desde tu navegador a:
 
 ```
-http://localhost/redbull-racing
+http://localhost/redbull-racing-app/
 ```
 
 6. Navega entre las páginas usando la barra de navegación.
